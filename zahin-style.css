@@ -1,0 +1,15 @@
+.center{
+	margin-left: 50%;
+    transform: translateX(-50%);
+}
+.zbtn{
+font-weight: bold;
+font-size: 22px;
+background-color: white;
+color: black;
+height: 40px;
+width: 80px;
+border:none;
+border-radius: 7px;
+box-shadow: 1px 1px 10px gray;
+}
