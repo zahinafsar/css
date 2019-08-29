@@ -97,7 +97,7 @@
 }
 .navbtn{
 	right: 10px;
-	position: absolute;
+	position: fixed;
 	border: none;
     margin: -3px;
 	display: block;
