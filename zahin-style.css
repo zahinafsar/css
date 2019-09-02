@@ -1,6 +1,30 @@
 *{
 	font-family: sans-serif;
 }
+.padd-5{
+	padding: 5px;
+}
+.padd-10{
+	padding: 10px;
+}
+.padd-15{
+	padding: 15px;
+}
+.padd-20{
+	padding: 20px;
+}
+.marg-5{
+	margin: 5px;
+}
+.marg-10{
+	margin: 10px;
+}
+.marg-15{
+	margin: 15px;
+}
+.marg-20{
+	margin: 20px;
+}
 .center{
 	margin-left: 50%;
     transform: translateX(-50%);
@@ -12,7 +36,17 @@
     padding: 8px;
     border:none;
     border-radius: 7px;
-    color: black;
+    background-color: dodgerblue;
+	color: white;
+}
+.zbtn-md{
+	font-size: 20px;
+	background-color: white;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 8px;
+    border:none;
+    border-radius: 7px;
     background-color: dodgerblue;
 	color: white;
 }
@@ -53,6 +87,7 @@
 	right:0px;
 	font-family: sans-serif;
     transition: .3s;
+    z-index: 1000;
 }
 .nav div{
 	margin: 12px;
@@ -66,7 +101,6 @@
     border-radius: 10px;
 }
 .box-group{
-	margin: initial;
 	display: flex;
 	justify-content:space-between;
 }
@@ -89,9 +123,86 @@
 	color: white;
 }
 .navbtn{
+	position: fixed;
 	display: none;
 }
+.inline{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.inline div{
+	width: 45%;
+}
+.z-form{
+	margin:30px 30px 30px 30px; 
+    padding: 40px 50px 40px 40px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px gray;
+}
+.w50{
+	width: 45%;
+}
+.form-text input{
+	width: 100%;
+	padding: 15px 0 15px 10px;
+    background-color: #e5e2e2; 
+    color: white;   
+	margin:20px 0 20px 0; 
+    display: flex;
+    position: relative;
+	border: none;
+	border-radius: 8px;
+	font-weight: bold;
+}
+.form-message textarea{
+	width: 100%;
+	padding: 15px 0 15px 10px;
+	background-color: #e5e2e2;
+    color: white;
+	margin:20px 0 20px 0; 
+    display: flex;
+    position: relative;
+	border: none;
+	border-radius: 8px;
+	font-weight: bold;
+}
+
+.nav-input-text{
+	position: relative;
+	float: right; 
+    margin: auto 0px  auto auto;
+    right: 0px;
+	height: 30px;
+	border: none;
+	border-radius: 8px;
+	padding-left: 9px;
+	font-weight: bold;
+}
+.nav-input-submit{
+	cursor: pointer;
+	margin: auto 20px  auto 10px;
+	height: 30px;
+	border: none;
+	font-weight: bold;
+    padding: 8px;
+    border-radius: 7px;
+	color: white;
+}
+.form-text,.form-file{
+color: black;
+}
 @media (max-width: 500px) {
+	.nav-input-text{
+		float: left;
+	width: 180px;
+	margin:10px 11px 0px;
+}
+    .nav-input-submit{
+    	float: left;
+    margin:10px 11px 10px; 
+	width: 70px;
+}
 .navbtn img{
 	width: 40px;
 }
@@ -101,7 +212,7 @@
 	border: none;
     margin: -3px;
 	display: block;
-	z-index: 1000;
+	z-index: 100000;
 }
 .nav{
 	flex-direction: column;
@@ -127,6 +238,9 @@
 @media (max-width: 600px){
 	.br60{
 		flex-direction: column;
+	}
+	.inline div{
+        width: 100%;
 	}
 }
 @media (max-width: 700px){
